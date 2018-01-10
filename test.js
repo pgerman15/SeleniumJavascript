@@ -28,6 +28,7 @@ driver.getTitle().then(function(title){
 });
 
 //Day 3
+
 driver.quit().then(() => {
     console.log('Driver closed');
 })
