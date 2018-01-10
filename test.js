@@ -1,4 +1,5 @@
-/*Begin Setup*/
+//Day 1
+// Start setup
 var webdriver = require('selenium-webdriver');
 var chrome = require('selenium-webdriver/chrome');
 var path = require('chromedriver').path;
@@ -9,10 +10,11 @@ chrome.setDefaultService(service);
 var driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
 	.build();
-/*End Setup*/
+//End Setup
 
 driver.get('http://google.com');
-//Ended 1-9
+
+//Day 2
 driver.findElement(webdriver.By.id('lst-ib')).sendKeys('cats', webdriver.Key.ENTER);
 driver.getTitle().then(function(title){
     if(title === 'Cats - Google Search'){
@@ -22,4 +24,6 @@ driver.getTitle().then(function(title){
     }
 });
 
+//Day 3
 driver.quit();
+console.log('Done');
