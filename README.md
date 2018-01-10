@@ -1,4 +1,4 @@
-# Selenium with Javascript Guide
+# Selenium with Javascript Guide(){
 
 *A set of examples to get started with selenium's javascript webdriver
 
@@ -8,3 +8,5 @@
     1. [Installing selenium] packages with NPM
     2. [Creating your first Node application]
     3. [Setting up the webdriver]
+
+}
