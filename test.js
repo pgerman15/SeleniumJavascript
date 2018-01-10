@@ -27,3 +27,13 @@ driver.getTitle().then(function(title){
 //Day 3
 driver.quit();
 console.log('Done');
+
+
+function expect(fistVar){
+    return {
+        first: firstVar,
+        equals: (secondVar) => {
+            return this.firstVar === secondVar;
+        }
+    }
+}
