@@ -22,32 +22,4 @@ driver.getTitle().then(function(title){
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// driver.findElement(webdriver.By.name('q')).sendKeys('Cats', webdriver.Key.ENTER);
-
-// driver.getTitle()
-// 	.then(function(title) {
-// 		 console.log("The title is: " + title)
-// 		 if(title === 'Cats - Google Search'){
-// 			 console.log('Success');
-// 		 }else{
-// 			 console.log('Failure');
-// 		 }
-// 	 });
-// driver.quit();
+driver.quit();
