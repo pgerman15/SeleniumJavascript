@@ -8,8 +8,46 @@ chrome.setDefaultService(service);
 
 var driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
-    .build();
+	.build();
 /*End Setup*/
 
 driver.get('http://google.com');
-driver.quit();
+//Ended 1-9
+driver.findElement(webdriver.By.id('lst-ib')).sendKeys('cats', webdriver.Key.ENTER);
+driver.getTitle().then(function(title){
+    if(title === 'Cats - Google Search'){
+        console.log('Success');
+    }else{
+        console.log('Failure');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// driver.findElement(webdriver.By.name('q')).sendKeys('Cats', webdriver.Key.ENTER);
+
+// driver.getTitle()
+// 	.then(function(title) {
+// 		 console.log("The title is: " + title)
+// 		 if(title === 'Cats - Google Search'){
+// 			 console.log('Success');
+// 		 }else{
+// 			 console.log('Failure');
+// 		 }
+// 	 });
+// driver.quit();
