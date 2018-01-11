@@ -5,8 +5,8 @@
 
 ## Topics covered
 
-  1. [Types](#types)
-  1. [References](#references)
-  1. [Objects](#objects)
-  1. [Arrays](#arrays)
-  1. [Destructuring](#destructuring)
+  1. [Install](#install)
+  1. [Webdriver setup](#setup)
+  1. [Selenium basics](#basics)
+  1. [Waits](#waits)
+  1. [Promises](#promises)
