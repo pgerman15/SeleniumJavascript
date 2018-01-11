@@ -3,10 +3,10 @@
 *A set of examples to get started with selenium's javascript webdriver*
 
 
-##Topics covered
+## Topics covered
 
-    1. [Installing selenium packages with NPM]
-    2. [Creating your first Node application]
-    3. [Setting up the webdriver]
-
-}
+  1. [Types](#types)
+  1. [References](#references)
+  1. [Objects](#objects)
+  1. [Arrays](#arrays)
+  1. [Destructuring](#destructuring)
