@@ -20,7 +20,7 @@
 
 - [1.2] Installing Selenium dependencies
     - Open the Command Prompt and navigate to the folder in your workspace that you created for this project.
-    > **Example**: My workspace folder is located inside my Documents folder, so to get there my command looks like 'cd c:\Users\pgerman\Documents\workspace\MySeleniumProjectName'
+        > **Example**: My workspace folder is located inside my Documents folder, so to get there my command looks like 'cd c:\Users\pgerman\Documents\workspace\MySeleniumProjectName'
     - To install the relevant dependencies, we will be using 'NPM' which was automatically installed with Node.js.
  
 ## Setup
