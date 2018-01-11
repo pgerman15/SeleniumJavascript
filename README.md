@@ -10,3 +10,13 @@
   1. [Selenium basics](#basics)
   1. [Waits](#waits)
   1. [Promises](#promises)
+
+## Install
+
+## Setup
+
+## Basics
+
+## Waits
+
+## Promises
