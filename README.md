@@ -33,8 +33,8 @@
 - [2.1] Instantiating the webdriver
     - Open your javascript file in an editor
     - Import the required selenium dependencies
-        - Add `var webdriver = require('selenium-webdriver');
-               var chrome = require('selenium-webdriver/chrome');
+        - Add `var webdriver = require('selenium-webdriver');\n
+               var chrome = require('selenium-webdriver/chrome');\n
                var path = require('chromedriver').path;` to beginning of your file
 
 ## Basics
