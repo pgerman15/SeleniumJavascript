@@ -26,9 +26,16 @@
     - Finally, we need to create our actual javascript file. For the purpose of this exercise, I will be creating a file called `test.js` but you can name it whatever you want. 
         - Open your newly created javascript file with your choice of editor
         - Add `console.log('hello world')` to your file and save it.
-        - Switch back to your command prompt and run `node yourfile.js` to start your application. If you see `hello world` show up under where you called the `node` command, your node application has been successfully created.  
+        - Switch back to your command prompt and run `node yourfile.js` to start your application. If you see `hello world` show up under where you called the `node` command, your node application has been successfully created.
 
 ## Setup
+
+- [2.1] Instantiating the webdriver
+    - Open your javascript file in an editor
+    - Import the required selenium dependencies
+        - Add `var webdriver = require('selenium-webdriver');
+               var chrome = require('selenium-webdriver/chrome');
+               var path = require('chromedriver').path;` to beginning of your file
 
 ## Basics
 
