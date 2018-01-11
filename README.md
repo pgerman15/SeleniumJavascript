@@ -23,7 +23,11 @@
         > **Example**: My workspace folder is located inside my Documents folder, so to get there my command looks like 'cd c:\Users\pgerman\Documents\workspace\MySeleniumProjectName'
     - To install the relevant dependencies, we will be using `npm` which was automatically installed with Node.js. First, we will be installing the Selenium webriver using the command `npm install selenium-webdriver`
     - Next, we need to install the browser driver that corresponds with which browser we want to test on. In this case, we are using Chrome, so we will use `npm install chromedriver` to install the relevant browser driver.
- 
+    - Finally, we need to create our actual javascript file. For the purpose of this exercise, I will be creating a file called `test.js` but you can name it whatever you want. 
+        - Open your newly created javascript file with your choice of editor
+        - Add `console.log('hello world')` to your file and save it.
+    - Switch back to your command prompt and run `node yourfile.js` to start your application. If you see `hello world` show up under where you called the `node` command, your node application has been successfully created.  
+
 ## Setup
 
 ## Basics
