@@ -49,7 +49,7 @@
 
 ## Basics
 
-    [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
+ [Selenium](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
 
 ## Waits
 
