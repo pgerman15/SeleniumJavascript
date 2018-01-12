@@ -49,7 +49,7 @@
 
 ## Basics
 
- [Selenium](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
+ [Selenium documentation](http://www.seleniumhq.org/docs/03_webdriver.jsp)
 
 ## Waits
 
