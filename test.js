@@ -23,7 +23,8 @@ driver.getTitle().then(function(title){
     }else{
         console.log('Failure');
     }
-    it('checks the title').expects(title).equals('cats - Google Search');
+
+    it('checks the title').expects(title).equals('dogs - Google Search');
     
 });
 
@@ -56,4 +57,12 @@ function Equation(expectation, firstVar){
         debugger;
         console.log(this.expectation + ': ', (this.first == secondVar) ? logSymbols.success : logSymbols.error);
     };
+
+    this.doesNotEqual = (secondVar) => {
+        console.log(this.expectation + ': ', (this.first != secondVar) ? logSymbols.success : logSymbols.error);
+    };
+
+    this.exists = () => {
+        console.log(this.expectation + ': ', (this.first) ? logSymbols.success : logSymbols.error);
+    }
 }
