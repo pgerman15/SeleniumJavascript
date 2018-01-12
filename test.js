@@ -19,7 +19,7 @@ driver.get('http://automationpractice.com/index.php');
 driver.findElement(webdriver.By.linkText('T-SHIRTS')).click();
 driver.findElement(webdriver.By.linkText('Add to cart')).click(); 
 driver.findElement(webdriver.By.className('cross')).click(); 
-
+console.log('test');
 /*
 driver.findElement(webdriver.By.linkText('cross)')).click();  
 driver.findElement(webdriver.By.linkText('View my shopping cart'));
