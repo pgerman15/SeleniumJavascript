@@ -12,12 +12,22 @@ var driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
 	.build();
 //End Setup
+let tshirt;
+//Goes to automationpractice.com
+driver.get('http://automationpractice.com');
 
-driver.get('http://google.com');
+//Finds the t-shirt link using a css selector. Alternatively, you could use
+//webdriver.By.linkText('T-shirts')
+tshirts = driver.findElement(webdriver.By.css('ul.sf-menu > li:nth-child(3) > a'));
+console.log('text: ', tshirts.getText());
+tshirts.then((element) => {
+    element.click();
+});
+
 
 //Day 2
-driver.findElement(webdriver.By.id('lst-ib')).sendKeys('cats', webdriver.Key.ENTER);
-driver.getTitle().then(function(title){
+//driver.findElement(webdriver.By.id('lst-ib')).sendKeys('cats', webdriver.Key.ENTER);
+/*driver.getTitle().then(function(title){
     if(title === 'Cats - Google Search'){
         console.log('Success');
     }else{
@@ -26,13 +36,13 @@ driver.getTitle().then(function(title){
 
     it('checks the title').expects(title).equals('dogs - Google Search');
     
-});
+});*/
 
 //Day 3
 
-driver.quit().then(() => {
-    console.log('Driver closed');
-})
+// driver.quit().then(() => {
+//     console.log('Driver closed');
+// })
 
 //Extra
 
@@ -62,7 +72,7 @@ function Equation(expectation, firstVar){
         console.log(this.expectation + ': ', (this.first != secondVar) ? logSymbols.success : logSymbols.error);
     };
 
-    this.exists = () => a
+    this.exists = () => {
         console.log(this.expectation + ': ', (this.first) ? logSymbols.success : logSymbols.error);
     }
 }
