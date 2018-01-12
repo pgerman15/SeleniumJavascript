@@ -12,33 +12,26 @@ var driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
 	.build();
 //End Setup
-let tshirt;
 //Goes to automationpractice.com
 driver.get('http://automationpractice.com');
 
 //Finds the t-shirt link using a css selector. Alternatively, you could use
-//webdriver.By.linkText('T-shirts')
-tshirts = driver.findElement(webdriver.By.css('ul.sf-menu > li:nth-child(3) > a'));
-console.log('text: ', tshirts.getText());
-tshirts.then((element) => {
-    element.click();
-});
+//webdriver.By.linkText('T-SHIRTS')
+driver.findElement(webdriver.By.css('ul.sf-menu > li:nth-child(3) > a')).click();
+const products = driver.findElements(webdriver.By.css('div.product-container div.right-block'));
+products.then((productArray) => {
+    let arrayOfPromises = [];
+    let correctProductPromise;
 
-
-//Day 2
-//driver.findElement(webdriver.By.id('lst-ib')).sendKeys('cats', webdriver.Key.ENTER);
-/*driver.getTitle().then(function(title){
-    if(title === 'Cats - Google Search'){
-        console.log('Success');
-    }else{
-        console.log('Failure');
+    for(let i = 0; i < productArray.length; i++){
+        arrayOfPromises[i] = productArray[i].getText().then((text) => {
+            console.log('text: ' + text);
+            return (text.indexOf('Faded Short Sleeve T-shirts') > -1);
+        }).then((isCorrect) => {
+            console.log('i: ' + i);
+        })
     }
-
-    it('checks the title').expects(title).equals('dogs - Google Search');
-    
-});*/
-
-//Day 3
+})
 
 // driver.quit().then(() => {
 //     console.log('Driver closed');
