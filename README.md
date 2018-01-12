@@ -45,8 +45,11 @@
         .withCapabilities(webdriver.Capabilities.chrome())
         .build();
     ```
+    - Finally, let's make sure that our webdriver is created correctly by telling it to navigate to a webpage with `driver.get('http://google.com');`. Now when we run `node yourapp.js`, it should open chrome and navigate to Google
 
 ## Basics
+
+    - [Selenium webdriver documentation](http://www.seleniumhq.org/docs/03_webdriver.jsp)
 
 ## Waits
 
