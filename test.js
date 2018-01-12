@@ -62,7 +62,7 @@ function Equation(expectation, firstVar){
         console.log(this.expectation + ': ', (this.first != secondVar) ? logSymbols.success : logSymbols.error);
     };
 
-    this.exists = () => {
+    this.exists = () => a
         console.log(this.expectation + ': ', (this.first) ? logSymbols.success : logSymbols.error);
     }
 }

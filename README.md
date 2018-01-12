@@ -49,7 +49,7 @@
 
 ## Basics
 
-    - [Selenium webdriver documentation](http://www.seleniumhq.org/docs/03_webdriver.jsp)
+    [Selenium documentation](http://www.seleniumhq.org/docs/03_webdriver.jsp)
 
 ## Waits
 
