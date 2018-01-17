@@ -28,7 +28,9 @@ products.then((productArray) => {
             console.log('text: ' + text);
             return (text.indexOf('Faded Short Sleeve T-shirts') > -1);
         }).then((isCorrect) => {
-            console.log('i: ' + i);
+            if(isCorrect){
+                return arrayOfPromises[i];
+            }
         })
     }
 })
