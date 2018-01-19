@@ -31,7 +31,7 @@ products.then((productArray) => {
             if(isCorrect){
                 return arrayOfPromises[i];
             }
-        })
+        }) 
     }
 })
 
